@@ -1,7 +1,8 @@
 import React from "react";
+import ListData from "./ListData";
 import Ser2 from "./Ser2";
 import Setup from "./Setup";
-
+import { Link } from "react-router-dom";
 export default function Navside() {
   return (
     <>
@@ -144,9 +145,9 @@ export default function Navside() {
                   <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                 </svg>
-                <span class="ml-3 text-black font-semibold font-sans">
+                <Link to='/'>     <span class="ml-3 text-black font-semibold font-sans">
                   Dashboard
-                </span>
+                </span></Link> 
               </a>
             </li>
             <li>
@@ -163,9 +164,9 @@ export default function Navside() {
                 >
                   <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
                 </svg>
-                <span class="flex-1 ml-3 text-black font-semibold font-sans whitespace-nowrap">
-                  Kanban
-                </span>
+                <Link to='/file'>  <span class="flex-1 ml-3 text-black font-semibold font-sans whitespace-nowrap">
+                  My Files
+                </span></Link> 
               </a>
             </li>
             <li>
@@ -183,9 +184,9 @@ export default function Navside() {
                   <path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path>
                   <path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path>
                 </svg>
-                <span class="flex-1 ml-3 text-black font-semibold font-sans whitespace-nowrap">
+                <Link to="/"> <span class="flex-1 ml-3 text-black font-semibold font-sans whitespace-nowrap">
                   Inbox
-                </span>
+                </span></Link> 
               </a>
             </li>
             <li>
@@ -206,9 +207,9 @@ export default function Navside() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="flex-1 ml-3 text-black font-semibold font-sans whitespace-nowrap">
-                  Users
-                </span>
+                <Link to='/'><span class="flex-1 ml-3 text-black font-semibold font-sans whitespace-nowrap">
+         Profile
+                </span></Link>
               </a>
             </li>
             {/* <li>
@@ -218,8 +219,8 @@ export default function Navside() {
             </a>
          </li> */}
             <li>
-              <a
-                href="#"
+              <Link to ="/login"
+                
                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 hover:bg-[#00D09c]"
               >
                 <svg
@@ -238,11 +239,11 @@ export default function Navside() {
                 <span class="flex-1 ml-3 text-black font-semibold font-sans whitespace-nowrap">
                   Sign In
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link to="/signup"
+                
                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 hover:bg-[#00D09c]"
               >
                 <svg
@@ -261,7 +262,7 @@ export default function Navside() {
                 <span class="flex-1 ml-3 text-black font-semibold font-sans whitespace-nowrap">
                   Sign Up
                 </span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -271,11 +272,11 @@ export default function Navside() {
         <div class="p-4 rounded-lg mt-14">
           <div class="grid grid-cols-3 gap-4 mb-4"></div>
           <div class="flex items-center justify-center h-48 mr-16 mb-4 rounded  ">
-            <Setup />
-          </div>
-          <div class="flex items-center justify-center h-20 mr-16 mt-24 mb-4 rounded  ">
 
           </div>
+        
+
+
         </div>
       </div>
      
